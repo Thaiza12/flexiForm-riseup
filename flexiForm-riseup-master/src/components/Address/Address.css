@@ -1,0 +1,51 @@
+/* src/components/Address/Address.css */
+
+.address-group {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.address-header {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+.address-line {
+  display: flex;
+  gap: 15px; /* Espaço entre os campos na mesma linha */
+  width: 100%;
+}
+
+.address-line > * {
+  /* Garante que cada input dentro da linha ocupe o espaço disponível */
+  flex-grow: 1;
+  /* Espaços customizados para CEP e UF */
+}
+
+/* Ajustes de largura específicos para campos pequenos na mesma linha */
+.address-line .cep-input {
+    flex-basis: 40%; /* CEP um pouco maior */
+}
+.address-line .uf-input {
+    flex-basis: 15%; /* UF bem menor */
+}
+.address-line .numero-input {
+    flex-basis: 30%; /* Número */
+}
+.address-line .bairro-input {
+    flex-basis: 60%; /* Bairro */
+}
+
+/* Garante que os campos de input dentro do Address não tenham margem inferior extra */
+/* Assumindo que seu Input base tem alguma margem no div pai */
+.address-group .form-field { 
+    margin-bottom: 15px;
+}

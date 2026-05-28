@@ -1,0 +1,194 @@
+{
+  "title": "Formulário de Contato",
+  "description": "Formulário configurável via JSON",
+  "theme": {
+    "colors": {
+      "background": "#2e1065",
+      "primary": "#8b5cf6",
+      "primaryDark": "#7c3aed",
+      "primaryLight": "#a78bfa",
+      "accent": "#6d28d9",
+      "surface": "#ffffff",
+      "surfaceSecondary": "#f5f3ff",
+      "textMain": "#1f2937",
+      "textMuted": "#6b7280",
+      "error": "#ef4444",
+      "errorBg": "#fef2f2",
+      "success": "#10b981"
+    }
+  },
+  "components": [
+    {
+      "type": "nome",
+      "id": "nome",
+      "label": "Nome Completo",
+      "required": true,
+      "visible": true,
+      "minLength": 3
+    },
+    {
+      "type": "Email",
+      "id": "Email",
+      "label": "E-mail",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "textarea",
+      "id": "mensagem",
+      "label": "Mensagem",
+      "placeholder": "Digite sua mensagem aqui...",
+      "required": true,
+      "visible": true,
+      "rows": 5
+    },
+    {
+      "type": "Address",
+      "id": "endereco_residencial",
+      "label": "Localização e Endereço",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "ImgUpload",
+      "id": "problema_imagem",
+      "label": "Descreva seu problema e anexe uma imagem",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "Password",
+      "id": "Password",
+      "label": "password",
+      "required": true,
+      "visible": true,
+      "minLength": 8,
+      "showComplexityHint": true,
+      "customRegex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$"
+    },
+    {
+      "type": "Url",
+      "id": "link_projeto",
+      "label": "Link do Projeto (URL)",
+      "placeholder": "https://www.meuprojeto.com.br",
+      "required": false,
+      "visible": true
+    },
+    {
+      "type": "Cep",
+      "id": "endereco_cep",
+      "label": "CEP (Código Postal)",
+      "placeholder": "99999-999",
+      "required": true,
+      "visible": true
+    },
+    {
+      "id": "Phone",
+      "label": "Telefone",
+      "type": "phone",
+      "placeholder": "(00) 00000-0000",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "Cpf",
+      "id": "numero_cpf",
+      "label": "CPF",
+      "placeholder": "999.999.999-99",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "Moeda",
+      "id": "valor_orcamento",
+      "label": "Orçamento Sugerido",
+      "required": true
+    },
+    {
+      "type": "Idade",
+      "id": "Idade",
+      "label": "Idade",
+      "required": true,
+      "min": 18,
+      "max": 65
+    },
+    {
+      "type": "Data",
+      "id": "DataNasc",
+      "label": "Data de Nascimento",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "Habilidades",
+      "id": "tecnologias_dominadas",
+      "label": "Tecnologias que você domina",
+      "required": false
+    },
+    {
+      "type": "select",
+      "id": "assunto",
+      "label": "Assunto",
+      "options": [
+        "Dúvida",
+        "Sugestão",
+        "Reclamação",
+        "Elogio"
+      ],
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "Genero",
+      "id": "Genero",
+      "label": "Gênero/Identidade",
+      "required": true,
+      "visible": true
+    },
+    {
+      "type": "Rating",
+      "id": "avaliacao_produto",
+      "label": "Avaliação do Produto",
+      "maxStars": 5,
+      "required": true
+    },
+    {
+      "type": "checkboxGroup",
+      "id": "preferencias",
+      "label": "Preferências de Contato",
+      "options": [
+        {
+          "value": "email",
+          "label": "Receber notícias por e-mail"
+        },
+        {
+          "value": "sms",
+          "label": "Receber notícias por SMS"
+        },
+        {
+          "value": "whatsapp",
+          "label": "Receber notícias por WhatsApp"
+        },
+        {
+          "value": "telefone",
+          "label": "Aceito receber ligações"
+        }
+      ],
+      "required": false,
+      "visible": true,
+      "layout": "vertical"
+    },
+    {
+      "type": "Escolha",
+      "id": "Escolha",
+      "label": "Você é Estudante?",
+      "required": true
+    },
+    {
+      "type": "Termos",
+      "id": "Termos",
+      "label": "Eu aceito os Termos de Serviço.",
+      "required": true
+    }
+  ]
+}

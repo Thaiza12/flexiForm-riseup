@@ -1,0 +1,10 @@
+/* src/components/BirthDate/BirthDate.css */
+
+.birth-date-field {
+    width: 100%;
+}
+
+/* Opcional: Ajustar a largura do input de data nativo */
+.birth-date-field .form-input {
+    min-width: 150px;
+}

@@ -1,0 +1,31 @@
+/* src/components/GenderSelect/GenderSelect.css */
+
+.gender-select-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+/* Estilo para o asterisco de obrigatório, assumindo que você o tem globalmente */
+.required-star {
+    color: red;
+    margin-left: 5px;
+}

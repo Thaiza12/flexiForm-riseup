@@ -1,0 +1,72 @@
+/* src/components/Rating/Rating.css */
+
+.rating-field {
+  margin-bottom: 20px;
+}
+
+.rating-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--text-main); /* Usa a cor de texto principal do tema */
+}
+
+.required-star {
+  color: var(--error); /* Usa a cor de erro do tema */
+  margin-left: 4px;
+}
+
+.stars-container {
+  font-size: 28px;
+  color: #ccc; /* Mantido fixo ou pode usar uma variável mais clara se definida */
+  margin-bottom: 10px;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.2s;
+  user-select: none;
+  padding: 0 2px;
+}
+
+.star.selected {
+  /* CRÍTICO: Usa a cor primária do tema para estrelas selecionadas */
+  color: var(--primary); 
+}
+
+/* --- Estilos para a caixa de texto de feedback --- */
+.feedback-container {
+    margin-top: 15px;
+    padding: 10px;
+    /* CRÍTICO: Usa a cor secundária da superfície do tema para o fundo */
+    border: 1px solid var(--surface-secondary); 
+    background-color: var(--surface-secondary);
+    border-radius: 8px;
+}
+
+.feedback-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.feedback-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.feedback-textarea:focus {
+    /* CRÍTICO: Usa a cor primária para o foco da textarea */
+    border-color: var(--primary); 
+    outline: none;
+    /* CRÍTICO: Usa a cor primária light para o box-shadow no foco */
+    box-shadow: 0 0 0 3px var(--primary-light); 
+}

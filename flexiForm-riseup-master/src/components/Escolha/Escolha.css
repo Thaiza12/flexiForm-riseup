@@ -1,0 +1,37 @@
+/* src/components/BinaryRadioGroup/BinaryRadioGroup.css */
+
+.form-field-radio-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-radio-label-group {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.radio-options-container {
+    display: flex;
+    gap: 20px; /* Espaço entre as opções "Sim" e "Não" */
+}
+
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-input {
+    /* Estilos básicos para o input de rádio nativo */
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.radio-custom-label {
+    /* Estilos para o texto da opção */
+    font-size: 16px;
+}
+
+/* Reutilize .error-message e .required-star de outros componentes */

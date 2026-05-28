@@ -1,0 +1,53 @@
+/* src/components/Termos/Termos.css */
+
+.form-field-checkbox {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center; /* Alinha o checkbox verticalmente no centro do texto */
+  padding: 0.5rem 0; /* Adiciona algum padding vertical */
+}
+
+.form-checkbox-input {
+  /* Estilos nativos do checkbox */
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  /* Garante alinhamento baseline */
+  margin-top: 0; 
+  margin-bottom: 0;
+  border-radius: 4px; /* Cantos levemente arredondados */
+}
+
+.form-checkbox-input:checked {
+  accent-color: var(--primary); /* Usa a cor primária do tema */
+}
+
+.form-checkbox-label {
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-main);
+  user-select: none; /* Previne seleção de texto */
+}
+
+.form-field-checkbox:hover .form-checkbox-label {
+  color: var(--primary-dark);
+}
+
+.required {
+  color: var(--error);
+  margin-left: 4px;
+}
+
+.field-error .form-checkbox-input {
+  border: 1px solid var(--error);
+}
+
+.error-message {
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-left: 10px; /* Adiciona a mensagem de erro ao lado, se houver espaço */
+  position: absolute; /* Para que não afete o layout flex */
+  bottom: -15px;
+  left: 0;
+}
